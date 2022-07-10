@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    background-image: url('/Images/test-bg.jpg');
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    outline: none;
+    border: none;
+    background-color: #7c7c7c2b;
+    color: white;
+    padding: 0.5em 1em;
+    height: 26px;
+    width: 26px;
+    border-radius: 24px;
+    width: calc(100% - 80px);
+    margin: 0.5em;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    height: 46px;
+    width: 46px;
+    background: #7c7c7c2b;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #7c7c7c6b;
+}
+
+.weather {
+    line-height: 1.2em;
+}
+
+.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.temp {
+    margin: 0;
+    margin-bottom: 0.6em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-size: 110%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
